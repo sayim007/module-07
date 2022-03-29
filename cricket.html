@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Animation</title>
+    <style>
+        .fild{
+            border: 1px solid rebeccapurple;
+        }
+        .bat{
+            width: 25%;
+            transition: transform 0.2s ease-in;
+        }
+        .ball{
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            background-color: red;
+            position: relative;
+            left: 485px;
+            transition: transform 0.5s ease-out 0.2s;
+
+
+        }
+        .fild:hover .bat{
+            transform-origin:top right;
+            transform: rotate(-60deg);   
+        }
+        .fild:hover .ball{
+            transform: translate(700px,-100px,);
+        }
+    </style>
+</head>
+<body>
+    <div class="fild">
+        <img class="bat" src="images/bat.png" alt="bat">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
